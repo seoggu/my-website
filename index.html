@@ -3,18 +3,83 @@
 <head>
   <title>꾸꾸들 공간</title>
   <meta charset="utf-8">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2EEZZJBX18"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2EEZZJBX18');
+</script>
+<style>
+a {
+  color:black;
+  text-decoration: none;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+ol {
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+}
+body {
+  margin:0;
+}
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    #grid ol{
+      border-right:none
+  }
+  h1 {
+    border-bottom:none;
+  }
+}
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">홈으로</a></h1>
+  <h1><a href="index.html">홈</a></h1>
+  <div id="grid">
   <ol>
-    <li><a href="1.html">날꾸</a></li>
+    <li><a href="1.html">날꾸<a></li>
     <li><a href="2.html">서꾸</a></li>
     <li><a href="3.html">꾸의 유래</a></li>
   </ol>
-
+  <!--
+  <h1><a href="index.html"><font color="green">홈으로</font></a></h1>
+  <ol>
+    <li><a href="1.html"><font color="red">날꾸</font><a></li>
+    <li><a href="2.html"><font color="red">서꾸</font></a></li>
+    <li><a href="3.html"><font color="red">꾸의 유래</font></a></li>
+  </ol>
+-->
+  <div id="article">
   <h2>꾸꾸들</h2>
   <p>꾸꾸들은 2018년 8월18일 부터 사귀고 있는 장수 커플임미다</p>
   <p><!--Start of Tawk.to Script-->
+  </div>
+</div>
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){

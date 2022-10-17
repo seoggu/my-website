@@ -12,17 +12,66 @@
 
   gtag('config', 'G-2EEZZJBX18');
 </script>
+<style>
+a {
+  color:black;
+  text-decoration: none;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  margin:0;
+  padding:20px;
+}
+ol {
+    border-right:1px solid gray;
+    width:100px;
+    margin:0;
+    padding:20px;
+}
+body {
+  margin:0;
+}
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left:33px
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    #grid ol{
+      border-right:none
+  }
+  h1 {
+    border-bottom:none;
+  }
+}
+  </style>
+
 </head>
 <body>
   <h1><a href="index.html">홈으로</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">날꾸</a></li>
     <li><a href="2.html">서꾸</a></li>
     <li><a href="3.html">꾸의 유래</a></li>
   </ol>
-
+  <div id="article">
   <h2>날꾸</h2>
   <p>1991년 11월 13일 생으로 신천에서 서꾸를 만나 4년넘게 만나고있는 중이다.
   댕이에 환장을 하며 최근 애견미용을 배우려 준비중이다.</p>
+  </div>
+</div>
 </body>
 </html>
