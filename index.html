@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html>
 <head>
   <title>꾸꾸들 공간</title>
@@ -16,6 +16,15 @@
 </head>
 <body>
   <h1><a href="index.html">꾸꾸들</a></h1>
+  <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="day" onclick="
+  document.querySelector('body').style.backgroundColor = 'white';
+  document.querySelector('body').style.color = 'black';
+  ">
+
   <div id="grid">
   <ol>
     <li><a href="1.html">날꾸<a></li>
