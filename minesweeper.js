@@ -3,6 +3,15 @@ var grid1 = document.getElementById("grid1");
 var testMode = false; //Turn this variable to true to see where the mines are
 generateGrid();
 
+let popup = document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+function closePopup(){
+  popup.classList.remove("open-popup");
+}
+
 function generateGrid() {
   //generate 10 by 10 grid
   grid1.innerHTML="";
@@ -57,7 +66,7 @@ function clickCell(cell) {
   //Check if the end-user clicked on a mine
   if (cell.getAttribute("data-mine")=="true") {
     revealMines();
-    alert("지뢰지롱ㅋ");
+    openPopup();
   } else {
     cell.className="clicked";
     //Count and display the number of adjacent mines
