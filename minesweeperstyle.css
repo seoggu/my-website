@@ -6,6 +6,7 @@ H6 {
 #grid1 {
   margin-left: auto;
   margin-right: auto;
+
 }
 
 #grid1 TR TD{
@@ -14,6 +15,7 @@ H6 {
   width: 16px;
   height: 16px;
   text-align: center;
+  color: blue;
 }
 
 #grid1 TR TD.clicked {
