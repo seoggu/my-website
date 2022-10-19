@@ -3,6 +3,7 @@
 <head>
   <title>꾸꾸들공간 - 날꾸</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EEZZJBX18"></script>
 <script>
@@ -13,9 +14,13 @@
   gtag('config', 'G-2EEZZJBX18');
 </script>
 <link rel="stylesheet" href="style.css">
+<script src="colors.js"></script>
 </head>
 <body>
   <h1><a href="index.html">홈으로</a></h1>
+  <input type="button" value="night" onclick="
+    nightdayhandler(this);
+  ">
   <div id="grid">
   <ol>
     <li><a href="1.html">날꾸</a></li>

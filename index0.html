@@ -3,7 +3,6 @@
 <head>
   <title>꾸꾸들 공간</title>
   <meta charset="utf-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2EEZZJBX18"></script>
 <script>
@@ -14,7 +13,36 @@
   gtag('config', 'G-2EEZZJBX18');
 </script>
 <link rel="stylesheet" href="style.css">
-<script src="colors.js"></script>
+
+  <script>
+  function LinksSetColor(color){
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+        console.log(alist[i]);
+        alist[i].style.color = color;
+        i = i + 1;
+    }
+  }
+  function BodySetColor(backgroundColor, color, daynight){
+    var target = document.querySelector('body');
+    target.style.backgroundColor = backgroundColor;
+    target.style.color = color;
+  }
+  function nightdayhandler(self) {
+  if(self.value === 'night') {
+    BodySetColor('black','white')
+    LinksSetColor('powderblue')
+    self.value = 'day';
+
+  } else {
+    BodySetColor('white','black')
+    LinksSetColor('blue')
+    self.value ='night';
+  }
+}
+  </script>
+
 </head>
 <body>
   <h1><a href="index.html">꾸꾸들</a></h1>
@@ -55,11 +83,5 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script--></p>
 
-
 </body>
-<H6>지뢰찾기</H6>
-<table id=grid1>
-</table>
-<script src="minesweeper.js"></script>
-<BUTTON onclick="generateGrid();">리셋</BUTTON>
 </html>
